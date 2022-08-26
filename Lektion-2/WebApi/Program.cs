@@ -18,6 +18,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer(builder.Configuration["Sql"]));
 builder.Services.AddScoped<IAccountManager, AccountRepository>();
+builder.Services.AddScoped<IDeviceManager, DeviceRepository>();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(x =>
 {
@@ -62,8 +63,6 @@ builder.Services.AddAuthentication(x =>
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Secret"]))
     };
 });
-
-
 
 var app = builder.Build();
 app.UseSwagger();

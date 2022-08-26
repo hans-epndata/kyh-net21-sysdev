@@ -69,3 +69,8 @@ C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\kyh-net21-sysdev\Lektion-2
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\kyh-net21-sysdev\Lektion-2\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\kyh-net21-sysdev\Lektion-2\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\kyh-net21-sysdev\Lektion-2\WebApi\obj\Debug\net6.0\ref\WebApi.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\kyh-net21-sysdev\Lektion-2\WebApi\bin\Debug\net6.0\Microsoft.Azure.Amqp.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\kyh-net21-sysdev\Lektion-2\WebApi\bin\Debug\net6.0\Microsoft.Azure.Devices.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\kyh-net21-sysdev\Lektion-2\WebApi\bin\Debug\net6.0\Microsoft.Azure.Devices.Shared.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\kyh-net21-sysdev\Lektion-2\WebApi\bin\Debug\net6.0\Microsoft.Rest.ClientRuntime.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\kyh-net21-sysdev\Lektion-2\WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll

@@ -1,16 +1,30 @@
+using Azure.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using WebApi.Helpers;
+using WebApi.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddAzureKeyVault(new Uri(builder.Configuration["KeyVaultUri"]), new DefaultAzureCredential());
+
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer(builder.Configuration["Sql"]));
+builder.Services.AddScoped<IAccountManager, AccountRepository>();
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(x =>
+{
+    x.IdleTimeout = TimeSpan.FromDays(30);
+    x.Cookie.IsEssential = true;
+    x.Cookie.HttpOnly = true;
+});
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -20,6 +34,14 @@ builder.Services.AddAuthentication(x =>
 {
     x.Events = new JwtBearerEvents
     {
+        OnAuthenticationFailed = context =>
+        {
+            if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
+                context.Fail("Unauthorized");
+
+            return Task.CompletedTask;
+        },
+
         OnTokenValidated = context =>
         {
             if (string.IsNullOrEmpty(context.Principal.FindFirst("id").Value))
@@ -53,8 +75,8 @@ app.UseSwaggerUI(options =>
 
 app.UseHttpsRedirection();
 app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin());
-app.UseAuthentication();    // VEM ÄR DU? - INLOGGNING - Behörighet     401
-app.UseAuthorization();     // VAD FÅR DU GÖRA?  - Rättigheter          403
+app.UseAuthentication();    // VEM ÄR DU?           - INLOGGNING        - Behörighet     401
+app.UseAuthorization();     // VAD FÅR DU GÖRA?                         - Rättigheter    403
 
 app.MapControllers();
 
@@ -75,8 +97,4 @@ app.Run();
         }
 
     }) 
- 
- 
- 
- 
 */

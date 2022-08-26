@@ -58,8 +58,8 @@ namespace WebApi.Repositories
         {
             try
             {
-                var _record = await _context.Set<T>().FindAsync(predicate);
-                
+                var _record = await _context.Set<T>().FirstOrDefaultAsync(predicate);
+
                 if (_record != null)
                 {
                     _context.Entry(record).State = EntityState.Modified;
@@ -75,7 +75,7 @@ namespace WebApi.Repositories
         {
             try
             {
-                var _record = await _context.Set<T>().FindAsync(predicate);
+                var _record = await _context.Set<T>().FirstOrDefaultAsync(predicate);
 
                 if (_record != null)
                 {

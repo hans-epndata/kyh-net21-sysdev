@@ -1,0 +1,11 @@
+C:\Users\HansMattin-Lassei\Documents\utbildning\NET21\Lektion-3\WebApi\obj\Release\net6.0\PubTmp\Out\WebApi.exe
+C:\Users\HansMattin-Lassei\Documents\utbildning\NET21\Lektion-3\WebApi\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\HansMattin-Lassei\Documents\utbildning\NET21\Lektion-3\WebApi\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\HansMattin-Lassei\Documents\utbildning\NET21\Lektion-3\WebApi\obj\Release\net6.0\PubTmp\Out\WebApi.dll
+C:\Users\HansMattin-Lassei\Documents\utbildning\NET21\Lektion-3\WebApi\obj\Release\net6.0\PubTmp\Out\WebApi.deps.json
+C:\Users\HansMattin-Lassei\Documents\utbildning\NET21\Lektion-3\WebApi\obj\Release\net6.0\PubTmp\Out\WebApi.runtimeconfig.json
+C:\Users\HansMattin-Lassei\Documents\utbildning\NET21\Lektion-3\WebApi\obj\Release\net6.0\PubTmp\Out\WebApi.pdb
+C:\Users\HansMattin-Lassei\Documents\utbildning\NET21\Lektion-3\WebApi\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\HansMattin-Lassei\Documents\utbildning\NET21\Lektion-3\WebApi\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\HansMattin-Lassei\Documents\utbildning\NET21\Lektion-3\WebApi\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\HansMattin-Lassei\Documents\utbildning\NET21\Lektion-3\WebApi\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

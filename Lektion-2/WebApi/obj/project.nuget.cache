@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TGY784kqSvRfxF1RoYcAw51IHR4/NVDslhvjUMhkMv9mNQGK15Fmj/ycyOkTOvTzq+SA8k0g5GdzZGIA34GRIA==",
+  "dgSpecHash": "2nsBN94UV09hFaydgTCBhdxHRuGW/z8+iEopiwxghyAGEcOWINVVdZj54LBN2Hg7bIMzKTrI6+r/zroeHqBngA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\kyh-net21-sysdev\\Lektion-2\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\HansMattin-Lassei\\Documents\\utbildning\\NET21\\Lektion-2\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

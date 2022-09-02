@@ -27,8 +27,10 @@ namespace AzureFunctions
 
             if (!string.IsNullOrEmpty(data.DeviceId))
             {
-                var device = await registryManager.AddDeviceAsync(new Device(data.DeviceId));
-                return new OkObjectResult(device);
+                var device = await registryManager.GetDeviceAsync(data.DeviceId);
+                
+                device ??= await registryManager.AddDeviceAsync(new Device(data.DeviceId));
+                return new OkObjectResult(new DeviceResponse { Device = device });
             }
 
             return new BadRequestResult();

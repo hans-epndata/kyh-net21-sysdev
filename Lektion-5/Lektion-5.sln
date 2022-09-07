@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{D272C527-38BD-4ADB-8287-845F6DDD57CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Device.IntelliFan", "Device.IntelliFan\Device.IntelliFan.csproj", "{8AC0113B-869E-4FA2-983A-3D5C8E5BC08A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D272C527-38BD-4ADB-8287-845F6DDD57CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D272C527-38BD-4ADB-8287-845F6DDD57CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D272C527-38BD-4ADB-8287-845F6DDD57CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D272C527-38BD-4ADB-8287-845F6DDD57CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC0113B-869E-4FA2-983A-3D5C8E5BC08A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC0113B-869E-4FA2-983A-3D5C8E5BC08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC0113B-869E-4FA2-983A-3D5C8E5BC08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC0113B-869E-4FA2-983A-3D5C8E5BC08A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4325227-909B-41D4-8C53-8FC3D947138A}
+	EndGlobalSection
+EndGlobal

@@ -8,5 +8,32 @@
         <FontFamily x:Key="FontAwesome-Regular">/Fonts/fa-regular-400.ttf#Font Awesome 6 Pro Regular</FontFamily>
         <FontFamily x:Key="FontAwesome-Solid">/Fonts/fa-solid-900.ttf#Font Awesome 6 Pro Solid</FontFamily>
 
+
+        <Style x:Key="btn" TargetType="Button">
+            <Setter Property="Background" Value="SlateGray" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="Margin" Value="0 30 0 10" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="DarkSlateGray" />
+                </Trigger>
+            </Style.Triggers>
+            
+        </Style>
+        
+        
     </Application.Resources>
 </Application>

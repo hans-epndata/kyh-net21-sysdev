@@ -5,7 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Device.IntelliFan"
         mc:Ignorable="d"
-        Title="Intelli FAN" Height="340" Width="300">
+        Title="IntelliFAN" Height="340" Width="300">
+
+    <Window.Resources>
+        <BeginStoryboard x:Key="sbRotate">
+            <Storyboard RepeatBehavior="Forever" >
+                <DoubleAnimation Storyboard.TargetName="fanBladesRotate" 
+                                 Storyboard.TargetProperty="Angle" From="0" To="360" />
+            </Storyboard>
+        </BeginStoryboard>
+    </Window.Resources>
+
 
     <Grid Margin="20">
         <Grid.RowDefinitions>
@@ -15,9 +25,9 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock FontFamily="{StaticResource FontAwesome-Regular}" Text="&#xe004;" FontSize="110" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Foreground="SlateGray" FontFamily="{StaticResource FontAwesome-Regular}" Text="&#xe004;" FontSize="110" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <Ellipse Height="70" Width="70" Margin="1 -123 0 0" Fill="White" />
-            <TextBlock FontFamily="{StaticResource FontAwesome-Solid}" Text="&#xf863;" FontSize="70" Margin="13 -97 0 0">
+            <TextBlock RenderTransformOrigin="0.5 0.5" Foreground="SlateGray" FontFamily="{StaticResource FontAwesome-Solid}" Text="&#xf863;" FontSize="70" Margin="13 -97 0 0">
                 <TextBlock.RenderTransform>
                     <RotateTransform x:Name="fanBladesRotate" Angle="0" />
                 </TextBlock.RenderTransform>
@@ -29,6 +39,6 @@
             <TextBlock x:Name="tblockConnectionState" Foreground="SlateGray" FontSize="11" FontWeight="SemiBold" Text="Connecting. Please wait..." HorizontalAlignment="Center" />
         </StackPanel>
 
-        <Button Grid.Row="2" x:Name="btnToggle" Click="btnToggle_Click" />
+        <Button Grid.Row="2" Style="{StaticResource btn}" x:Name="btnToggle" Click="btnToggle_Click" />
     </Grid>
 </Window>

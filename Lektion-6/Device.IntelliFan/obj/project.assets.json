@@ -1,11 +1,33 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "WpfShared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WpfShared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WpfShared.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "WpfShared/1.0.0": {
+      "type": "project",
+      "path": "../WpfShared/WpfShared.csproj",
+      "msbuildProject": "../WpfShared/WpfShared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "WpfShared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\": {},
@@ -39,7 +61,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\Lektion-6\\WpfShared\\WpfShared.csproj": {
+              "projectPath": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\Lektion-6\\WpfShared\\WpfShared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

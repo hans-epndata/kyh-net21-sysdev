@@ -24,5 +24,10 @@ namespace Device.IntelliFan
         {
             InitializeComponent();
         }
+
+        private void btnToggle_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Device.IntelliFan/1.0.0": {
+        "dependencies": {
+          "WpfShared": "1.0.0"
+        },
+        "runtime": {
+          "Device.IntelliFan.dll": {}
+        }
+      },
+      "WpfShared/1.0.0": {
+        "runtime": {
+          "WpfShared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Device.IntelliFan/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WpfShared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

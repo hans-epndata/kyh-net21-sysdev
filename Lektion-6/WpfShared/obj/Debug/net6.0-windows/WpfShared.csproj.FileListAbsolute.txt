@@ -1,0 +1,17 @@
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\Fonts\fa-regular-400.ttf
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\Fonts\fa-solid-900.ttf
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\WpfShared.deps.json
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\WpfShared.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\WpfShared.pdb
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared.csproj.AssemblyReference.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\Resources\Fonts.baml
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared_MarkupCompile.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared.g.resources
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared.AssemblyInfoInputs.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared.AssemblyInfo.cs
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared.csproj.CoreCompileInputs.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\refint\WpfShared.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared.pdb
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\ref\WpfShared.dll

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "AzureFunc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{C0950BAB-4341-4F19-9FD8-4E3B91A567C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Device.IntelliFan", "Device.IntelliFan\Device.IntelliFan.csproj", "{9F7EC894-2545-422C-9702-B1110BE15A48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfShared", "WpfShared\WpfShared.csproj", "{F674093C-9C71-4966-B9D4-147358A6CF29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{C0950BAB-4341-4F19-9FD8-4E3B91A567C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0950BAB-4341-4F19-9FD8-4E3B91A567C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0950BAB-4341-4F19-9FD8-4E3B91A567C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F7EC894-2545-422C-9702-B1110BE15A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7EC894-2545-422C-9702-B1110BE15A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7EC894-2545-422C-9702-B1110BE15A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7EC894-2545-422C-9702-B1110BE15A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F674093C-9C71-4966-B9D4-147358A6CF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F674093C-9C71-4966-B9D4-147358A6CF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F674093C-9C71-4966-B9D4-147358A6CF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F674093C-9C71-4966-B9D4-147358A6CF29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

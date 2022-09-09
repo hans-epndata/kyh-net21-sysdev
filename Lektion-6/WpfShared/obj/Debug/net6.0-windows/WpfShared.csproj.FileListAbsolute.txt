@@ -13,3 +13,4 @@ C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\De
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\refint\WpfShared.dll
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared.pdb
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\ref\WpfShared.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\Resources\Buttons.baml

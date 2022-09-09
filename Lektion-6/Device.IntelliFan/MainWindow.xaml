@@ -21,7 +21,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
+            <RowDefinition Height="80" />
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -34,7 +34,7 @@
             </TextBlock>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Margin="0 20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Row="1" Margin="0 10" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="tblockDeviceName" Foreground="SlateGray" FontSize="22" FontWeight="SemiBold" Text="IntelliFAN" HorizontalAlignment="Center" />
             <TextBlock x:Name="tblockConnectionState" Foreground="SlateGray" FontSize="11" FontWeight="SemiBold" Text="Connecting. Please wait..." HorizontalAlignment="Center" />
         </StackPanel>

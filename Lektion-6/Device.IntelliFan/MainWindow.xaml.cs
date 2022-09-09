@@ -72,9 +72,11 @@ namespace Device.IntelliFan
                     break;
 
                 case ConnectionState.Connected:
+                    isConnected = true;
                     tblockConnectionState.Text = "Connected";
                     btnToggle.Visibility = Visibility.Visible;
                     btnToggle.Content = "Start Fan";
+
                     break;
 
             }
@@ -93,7 +95,7 @@ namespace Device.IntelliFan
                     {
                         using (var http = new HttpClient())
                         {
-                            var response = await http.PostAsJsonAsync("https://kyh-shared.azurewebsites.net/api/devices/connect1", new HttpDeviceRequest { DeviceId = deviceId });
+                            var response = await http.PostAsJsonAsync("https://kyh-shared.azurewebsites.net/api/devices/connect", new HttpDeviceRequest { DeviceId = deviceId });
                             if (response.IsSuccessStatusCode)
                             {
                                 var data = JsonConvert.DeserializeObject<HttpDeviceResponse>(await response.Content.ReadAsStringAsync());

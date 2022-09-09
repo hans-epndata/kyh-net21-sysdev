@@ -12,12 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Fonts\fa-regular-400.ttf">
+    <Resource Include="Fonts\fa-regular-400.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Fonts\fa-solid-900.ttf">
+    </Resource>
+    <Resource Include="Fonts\fa-solid-900.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Resource>
   </ItemGroup>
 
 </Project>

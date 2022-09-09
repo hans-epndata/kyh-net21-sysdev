@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 
-1402792862
-2264464111
+2-519448694
+
 1-1909889902
 194-200944676
-Resources\Fonts.xaml;
+Resources\Buttons.xaml;Resources\Fonts.xaml;
 
 False
 

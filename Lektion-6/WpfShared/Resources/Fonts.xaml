@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <FontFamily x:Key="FontAwesome-Regular">pack://application:,,,/Device.IntelliFan;component/Fonts/fa-regular-400.ttf#Font Awesome 6 Pro Regular</FontFamily>
-    <FontFamily x:Key="FontAwesome-Solid">pack://application:,,,/Device.IntelliFan;component/Fonts/fa-solid-900.ttf#Font Awesome 6 Pro Solid</FontFamily>
+    <FontFamily x:Key="FontAwesome-Regular">pack://application:,,,/WpfShared;component/Fonts/fa-regular-400.ttf#Font Awesome 6 Pro Regular</FontFamily>
+    <FontFamily x:Key="FontAwesome-Solid">pack://application:,,,/WpfShared;component/Fonts/fa-solid-900.ttf#Font Awesome 6 Pro Solid</FontFamily>
 </ResourceDictionary>

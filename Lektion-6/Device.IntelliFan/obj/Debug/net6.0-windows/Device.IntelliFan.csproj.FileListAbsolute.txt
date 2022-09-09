@@ -1,6 +1,4 @@
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\Device.IntelliFan\bin\Debug\net6.0-windows\Device.IntelliFan.exe
-C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\Device.IntelliFan\bin\Debug\net6.0-windows\Fonts\fa-regular-400.ttf
-C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\Device.IntelliFan\bin\Debug\net6.0-windows\Fonts\fa-solid-900.ttf
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\Device.IntelliFan\bin\Debug\net6.0-windows\Device.IntelliFan.deps.json
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\Device.IntelliFan\bin\Debug\net6.0-windows\Device.IntelliFan.runtimeconfig.json
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\Device.IntelliFan\bin\Debug\net6.0-windows\Device.IntelliFan.dll

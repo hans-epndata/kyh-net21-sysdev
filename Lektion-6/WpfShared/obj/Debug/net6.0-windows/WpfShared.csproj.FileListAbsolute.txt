@@ -1,5 +1,3 @@
-C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\Fonts\fa-regular-400.ttf
-C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\Fonts\fa-solid-900.ttf
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\WpfShared.deps.json
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\WpfShared.dll
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\WpfShared.pdb

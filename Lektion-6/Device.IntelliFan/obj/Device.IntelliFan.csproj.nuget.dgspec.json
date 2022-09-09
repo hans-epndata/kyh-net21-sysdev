@@ -174,7 +174,11 @@
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\Lektion-6\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\Lektion-6\\Shared\\Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -186,6 +190,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.Azure.Devices.Client": {
+              "target": "Package",
+              "version": "[1.41.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

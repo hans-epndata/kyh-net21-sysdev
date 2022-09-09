@@ -987,6 +987,10 @@
         }
       },
       "WpfShared/1.0.0": {
+        "dependencies": {
+          "Microsoft.Azure.Devices.Client": "1.41.2",
+          "Shared": "1.0.0"
+        },
         "runtime": {
           "WpfShared.dll": {}
         }

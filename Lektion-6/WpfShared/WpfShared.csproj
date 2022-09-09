@@ -12,6 +12,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Devices.Client" Version="1.41.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Fonts\fa-regular-400.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

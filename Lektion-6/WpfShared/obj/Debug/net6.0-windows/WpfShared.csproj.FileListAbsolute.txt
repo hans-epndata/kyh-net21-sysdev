@@ -14,3 +14,6 @@ C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\De
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared.pdb
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\ref\WpfShared.dll
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\Resources\Buttons.baml
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\Shared.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\bin\Debug\net6.0-windows\Shared.pdb
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-6\WpfShared\obj\Debug\net6.0-windows\WpfShared.csproj.CopyComplete

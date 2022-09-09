@@ -71,8 +71,8 @@ namespace Device.IntelliFan
                                 try
                                 {
                                     deviceClient = DeviceClient.CreateFromConnectionString(data.ConnectionString);
-                                    
 
+                                    SetConnectionState(ConnectionState.Initializing);
                                     var twinCollection = new TwinCollection();
                                     twinCollection["owner"] = "Hans";
                                     twinCollection["deviceType"] = "FAN";
@@ -84,11 +84,8 @@ namespace Device.IntelliFan
                                     if (result.IsSuccessStatusCode)
                                     {
                                         var connectionstate = await result.Content.ReadAsStringAsync();
-                                        if(connectionstate != "Disconnected")
+                                        if(connectionstate == "Connected")
                                         {
-                                            SetConnectionState(ConnectionState.Initializing);
-
-
                                             SetConnectionState(ConnectionState.Connected);
                                             break;
                                         }

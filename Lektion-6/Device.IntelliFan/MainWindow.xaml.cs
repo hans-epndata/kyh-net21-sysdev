@@ -48,7 +48,36 @@ namespace Device.IntelliFan
 
         private void SetConnectionState(ConnectionState state)
         {
+            switch(state)
+            {
+                case ConnectionState.NotConnected:
+                    tblockConnectionState.Text = "Not connected";
+                    btnToggle.Visibility = Visibility.Visible;
+                    btnToggle.Content = "Connect";
+                    break;
 
+                case ConnectionState.Connecting:
+                    tblockConnectionState.Text = "Connecting. Please wait...";
+                    btnToggle.Visibility = Visibility.Hidden;
+                    break;
+
+                case ConnectionState.StillConnecting:
+                    tblockConnectionState.Text = "Still connecting. Please wait...";
+                    btnToggle.Visibility = Visibility.Hidden;
+                    break;
+
+                case ConnectionState.Initializing:
+                    tblockConnectionState.Text = "Initializing. Please wait...";
+                    btnToggle.Visibility = Visibility.Hidden;
+                    break;
+
+                case ConnectionState.Connected:
+                    tblockConnectionState.Text = "Connected";
+                    btnToggle.Visibility = Visibility.Visible;
+                    btnToggle.Content = "Start Fan";
+                    break;
+
+            }
         }
 
         private async Task ConnectAsync()
@@ -57,47 +86,58 @@ namespace Device.IntelliFan
             {
                 if (!isConnected)
                 {
-                    // If more then 3 attempts then change connectionState
-                    SetConnectionState(i > 3 ? ConnectionState.StillConnecting : ConnectionState.Connecting);
+                    // If more then 5 attempts then change connectionState
+                    SetConnectionState(i > 5 ? ConnectionState.StillConnecting : ConnectionState.Connecting);
                 
-                    using (var http = new HttpClient())
+                    try
                     {
-                        var response = await http.PostAsJsonAsync("https://kyh-shared.azurewebsites.net/api/devices/connect", new HttpDeviceRequest { DeviceId = deviceId });
-                        if (response.IsSuccessStatusCode)
+                        using (var http = new HttpClient())
                         {
-                            var data = JsonConvert.DeserializeObject<HttpDeviceResponse>(await response.Content.ReadAsStringAsync());
-                            if (data != null)
+                            var response = await http.PostAsJsonAsync("https://kyh-shared.azurewebsites.net/api/devices/connect1", new HttpDeviceRequest { DeviceId = deviceId });
+                            if (response.IsSuccessStatusCode)
                             {
-                                try
+                                var data = JsonConvert.DeserializeObject<HttpDeviceResponse>(await response.Content.ReadAsStringAsync());
+                                if (data != null)
                                 {
-                                    deviceClient = DeviceClient.CreateFromConnectionString(data.ConnectionString);
-
-                                    SetConnectionState(ConnectionState.Initializing);
-                                    var twinCollection = new TwinCollection();
-                                    twinCollection["owner"] = "Hans";
-                                    twinCollection["deviceType"] = "FAN";
-
-                                    await deviceClient.UpdateReportedPropertiesAsync(twinCollection);
-                                    var twin = deviceClient.GetTwinAsync();
-
-                                    var result = await http.GetAsync($"https://kyh-shared.azurewebsites.net/api/devices/connect?code=-SWiKVko3aRE3PV53iizVYEXzE84M8hpmxI39vqvXxqfAzFus0uGDA==&deviceId={deviceId}");
-                                    if (result.IsSuccessStatusCode)
+                                    try
                                     {
-                                        var connectionstate = await result.Content.ReadAsStringAsync();
-                                        if(connectionstate == "Connected")
+                                        deviceClient = DeviceClient.CreateFromConnectionString(data.ConnectionString);
+
+                                        SetConnectionState(ConnectionState.Initializing);
+                                        var twinCollection = new TwinCollection();
+                                        twinCollection["owner"] = "Hans";
+                                        twinCollection["deviceType"] = "FAN";
+
+                                        await deviceClient.UpdateReportedPropertiesAsync(twinCollection);
+                                        var twin = deviceClient.GetTwinAsync();
+
+                                        var result = await http.GetAsync($"https://kyh-shared.azurewebsites.net/api/devices/connect?code=-SWiKVko3aRE3PV53iizVYEXzE84M8hpmxI39vqvXxqfAzFus0uGDA==&deviceId={deviceId}");
+                                        if (result.IsSuccessStatusCode)
                                         {
-                                            SetConnectionState(ConnectionState.Connected);
-                                            break;
+                                            var connectionstate = await result.Content.ReadAsStringAsync();
+                                            if (connectionstate == "Connected")
+                                            {
+                                                SetConnectionState(ConnectionState.Connected);
+                                                break;
+                                            }
                                         }
                                     }
+                                    catch { break; }
                                 }
-                                catch {  }
                             }
+
+                            await Task.Delay(1000);
                         }
+
                     }
-                
+                    catch { }
                 }
+                else
+                    SetConnectionState(ConnectionState.Connected);
             }
+
+            if (!isConnected)
+                SetConnectionState(ConnectionState.NotConnected);
         }
 
 

@@ -5,7 +5,7 @@
         <Setter Property="Background" Value="SlateGray" />
         <Setter Property="Foreground" Value="White" />
         <Setter Property="Padding" Value="10" />
-        <Setter Property="Margin" Value="0 0 0 10" />
+        <Setter Property="Margin" Value="0 30 0 10" />
         <Setter Property="Width" Value="150" />
         <Setter Property="FontWeight" Value="Bold" />
         <Setter Property="Visibility" Value="Hidden" />

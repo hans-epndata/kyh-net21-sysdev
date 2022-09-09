@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Device.IntelliFan"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Intelli FAN" Height="340" Width="300">
+    
+    
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+          
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <TextBlock>
+                    <Ellipse />
+                    <TextBlock>
+                        <TextBlock.RenderTransform>
+                            <RotateTransform x:Name="fanBladesRotate" Angle="0" />
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </TextBlock>
+            </Grid>
+        </StackPanel>
 
+        <StackPanel Grid.Row="1" Margin="0 20" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="tblockDeviceName" Foreground="SlateGray" FontSize="22" FontWeight="SemiBold" Text="IntelliFAN" HorizontalAlignment="Center" />
+            <TextBlock x:Name="tblockConnectionState" Foreground="SlateGray" FontSize="11" FontWeight="SemiBold" Text="Connecting. Please wait..." HorizontalAlignment="Center" />
+        </StackPanel>
+
+        <Button Grid.Row="2" x:Name="btnToggle" Click="btnToggle_Click" />
     </Grid>
 </Window>

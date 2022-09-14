@@ -10,6 +10,9 @@
     <Compile Update="Components\MainMenu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\Tile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\Views\KitchenView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -18,10 +21,19 @@
     <Page Update="Components\MainMenu.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\Tile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\Views\KitchenView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Borders.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Buttons.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources\Fonts.xaml">

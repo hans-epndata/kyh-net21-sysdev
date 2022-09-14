@@ -11,6 +11,8 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Fonts.xaml" />
                 <ResourceDictionary Source="Resources/Menu.xaml" />
+                <ResourceDictionary Source="Resources/Borders.xaml" />
+                <ResourceDictionary Source="Resources/Buttons.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
 

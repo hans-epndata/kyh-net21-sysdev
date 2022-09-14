@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-7\SmartApp\App.xaml
-51462078941
+8335435646
 5576714843
-111007108067
+12-976210491
 194-200944676
-Components\MainMenu.xaml;MainWindow.xaml;MVVM\Views\KitchenView.xaml;Resources\Fonts.xaml;Resources\Menu.xaml;
+Components\MainMenu.xaml;Components\Tile.xaml;MainWindow.xaml;MVVM\Views\KitchenView.xaml;Resources\Borders.xaml;Resources\Buttons.xaml;Resources\Fonts.xaml;Resources\Menu.xaml;
 
 True
 

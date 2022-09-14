@@ -33,3 +33,7 @@ C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-7\SmartApp\obj\Deb
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-7\SmartApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-7\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\KitchenView.g.cs
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-7\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\KitchenView.baml
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-7\SmartApp\obj\Debug\net6.0-windows\Resources\Borders.baml
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-7\SmartApp\obj\Debug\net6.0-windows\Resources\Buttons.baml
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-7\SmartApp\obj\Debug\net6.0-windows\Components\Tile.g.cs
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-7\SmartApp\obj\Debug\net6.0-windows\Components\Tile.baml

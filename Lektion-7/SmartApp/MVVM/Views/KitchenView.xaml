@@ -3,14 +3,65 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SmartApp.MVVM.Views"
+             xmlns:local="clr-namespace:SmartApp.MVVM.Views" xmlns:components="clr-namespace:SmartApp.Components"
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="1080">
-    <Border x:Name="kitchen">
+    
+    <Border x:Name="kitchen" Style="{StaticResource pageBorder}">
         <Border CornerRadius="10">
             <Border.Background>
                 <ImageBrush Stretch="Fill" Opacity="0.6" ImageSource="/Assets/Images/kitchen.jpeg" />
             </Border.Background>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" x:Name="btnClose" Click="btnClose_Click" Style="{StaticResource closeButton}" />
+
+                <Grid Grid.Row="1" Margin="50 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                        <TextBlock Text="Kitchen and Dining" Foreground="#ffffff" FontSize="36" FontWeight="Bold" />
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Foreground="#ffffff" FontSize="20">
+                                <Run Text="{Binding Temperature}" FontSize="32" />
+                                <Run Text="{Binding TemperatureScale}" />
+                            </TextBlock>
+                            <TextBlock Margin="40 0 0 0" Foreground="#ffffff" FontSize="20">
+                                <Run Text="{Binding Humidity}" FontSize="32" />
+                                <Run Text="{Binding HumidityScale}" />
+                            </TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <Grid Grid.Column="1" Margin="40 0 0 0" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+
+                        <components:Tile Grid.Row="0" Grid.Column="0" />
+                        <components:Tile Grid.Row="0" Grid.Column="1" />
+                        <components:Tile Grid.Row="1" Grid.Column="0" />
+                        <components:Tile Grid.Row="1" Grid.Column="1" />
+
+
+                    </Grid>
+                </Grid>
+            </Grid>
+
         </Border>
     </Border>
 </UserControl>

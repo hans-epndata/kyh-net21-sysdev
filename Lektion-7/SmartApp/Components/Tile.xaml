@@ -6,16 +6,31 @@
              xmlns:local="clr-namespace:SmartApp.Components"
              mc:Ignorable="d" 
              >
-    <Border CornerRadius="10" Margin="5" Padding="20" Height="150" HorizontalAlignment="Stretch">
-        <Border.Effect>
-            <DropShadowEffect ShadowDepth="1" BlurRadius="20" Opacity="0.5" />
-        </Border.Effect>
-        <Border.Style>
-            <Style TargetType="Border">
-                <Setter Property="Width" Value="150" />
-                <Setter Property="Background" Value="#efefef" />
-                <Setter Property="BorderThickness" Value="0" />
-            </Style>
-        </Border.Style>
+    <Border Style="{StaticResource tileBorder}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Off" VerticalAlignment="Center" />
+                <CheckBox Grid.Column="1" Style="{StaticResource toggleButton}" HorizontalAlignment="Right" VerticalAlignment="Center" />
+            </Grid>
+
+            <TextBlock 
+                Grid.Row="1" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                FontFamily="{StaticResource FontAwesome-Regular}" 
+                Text="&#xf8f4;" 
+                FontSize="52" 
+                />
+        </Grid>
     </Border>
 </UserControl>

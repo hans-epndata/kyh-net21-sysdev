@@ -11,5 +11,21 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
+    <Style x:Key="tileBorder" TargetType="Border">
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="Margin" Value="8" />
+        <Setter Property="Padding" Value="20" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Width" Value="150" />
+        <Setter Property="Height" Value="150" />
+        <Setter Property="Background" Value="#efefef" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect ShadowDepth="1" BlurRadius="20" Opacity="0.5" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
 </ResourceDictionary>

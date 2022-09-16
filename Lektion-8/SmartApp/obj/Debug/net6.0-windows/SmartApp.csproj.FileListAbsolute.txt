@@ -38,3 +38,5 @@ C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-8\SmartApp\obj\Deb
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-8\SmartApp\obj\Debug\net6.0-windows\Resources\TilesDictionary.baml
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-8\SmartApp\obj\Debug\net6.0-windows\Components\TileComponent.g.cs
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-8\SmartApp\obj\Debug\net6.0-windows\Components\TileComponent.baml
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-8\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\BedroomView.g.cs
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-8\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\BedroomView.baml

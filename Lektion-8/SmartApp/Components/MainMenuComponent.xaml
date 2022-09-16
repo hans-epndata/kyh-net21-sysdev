@@ -8,8 +8,8 @@
              >
     <Border Style="{StaticResource mainMenuBar}">
         <StackPanel Orientation="Horizontal">
-            <RadioButton Style="{StaticResource mainMenuButton}" Content="&#xe01d;" IsChecked="True" />
-            <RadioButton Style="{StaticResource mainMenuButton}" Content="&#xf8f7;" />
+            <RadioButton Command="{Binding KitchenViewCommand}" Style="{StaticResource mainMenuButton}" Content="&#xe01d;" IsChecked="True" />
+            <RadioButton Command="{Binding BedroomViewCommand}" Style="{StaticResource mainMenuButton}" Content="&#xf8f7;" />
             <RadioButton Style="{StaticResource mainMenuButton}" Content="&#xf79a;" />
             <RadioButton Style="{StaticResource mainMenuButton}" Content="&#xf011;" x:Name="btnClose" Click="btnClose_Click" />
         </StackPanel>        

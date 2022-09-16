@@ -25,7 +25,7 @@
             </Grid>
 
             <StackPanel Grid.Row="1">
-                <TextBlock Text="&#xf8f4;" Style="{StaticResource tileIcon}"  />
+                <TextBlock Style="{StaticResource tileIcon}"  />
                 <TextBlock Text="{Binding ElementName=tile,Path=Title}" Foreground="White" HorizontalAlignment="Center" Margin="0 8 0 0" />
             </StackPanel>
         </Grid>

@@ -47,7 +47,7 @@
                                  Height="22"
                                  Width="22"
                                  HorizontalAlignment="Left"
-                                 Margin="26 0 0 0"
+                                 Margin="2 0 0 0"
                                  />
                     </Grid>
                     <ControlTemplate.Triggers>
@@ -64,7 +64,7 @@
                                         <ThicknessAnimation
                                             Storyboard.TargetName="toggleSwitch"
                                             Storyboard.TargetProperty="Margin"
-                                            To="2 0 0 0"
+                                            To="26 0 0 0"
                                             Duration="0:0:0:0.2"                                            
                                             />
                                     </Storyboard>
@@ -82,7 +82,7 @@
                                         <ThicknessAnimation
                                             Storyboard.TargetName="toggleSwitch"
                                             Storyboard.TargetProperty="Margin"
-                                            To="26 0 0 0"
+                                            To="2 0 0 0"
                                             Duration="0:0:0:0.2"                                            
                                             />
                                     </Storyboard>

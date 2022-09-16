@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SmartApp.Components"
              mc:Ignorable="d" 
+             x:Name="tile"
              >
     <Border Style="{StaticResource tile}">
         <Grid>
@@ -25,11 +26,8 @@
 
             <StackPanel Grid.Row="1">
                 <TextBlock Text="&#xf8f4;" Style="{StaticResource tileIcon}"  />
-                <TextBlock Text="IntelliFAN" Foreground="White" HorizontalAlignment="Center" Margin="0 8 0 0" />
+                <TextBlock Text="{Binding ElementName=tile,Path=Title}" Foreground="White" HorizontalAlignment="Center" Margin="0 8 0 0" />
             </StackPanel>
-            
-            
-
         </Grid>
     </Border>
 </UserControl>

@@ -21,6 +21,14 @@
         <Setter Property="Foreground" Value="White" />
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="HorizontalAlignment" Value="Center" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding ElementName=toggle,Path=IsChecked}" Value="True">
+                <Setter Property="Text" Value="{Binding ElementName=tile,Path=IconActive}" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding ElementName=toggle,Path=IsChecked}" Value="False">
+                <Setter Property="Text" Value="{Binding ElementName=tile,Path=IconInActive}" />
+            </DataTrigger>
+        </Style.Triggers>
     </Style>
 
     <Style x:Key="tileToggleButton" TargetType="ToggleButton" >

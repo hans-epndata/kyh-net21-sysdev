@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="SmartApp.MVVM.Views.KitchenView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SmartApp.MVVM.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280">
+    
+    <Border x:Name="kitchen" Style="{StaticResource pageBorder}">
+        <Border CornerRadius="10">
+            <Border.Background>
+                <ImageBrush Opacity="0.6" ImageSource="/Assets/Images/kitchen.jpeg" />
+            </Border.Background>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" x:Name="btnCloseApp" Click="btnCloseApp_Click" Style="{StaticResource closeButton}" />
+
+                <Grid Grid.Row="1" Margin="40 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                        <TextBlock Text="Kitchen and Dining" Foreground="White" FontSize="42" FontWeight="bold" />
+
+                        <Grid Margin="0 10 0 0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="0" Grid.Row="0" Text="Temperature" Foreground="White" FontSize="14" FontWeight="SemiBold" />
+                            <TextBlock Grid.Column="1" Grid.Row="0" Text="Humidity" Foreground="White" FontSize="14" FontWeight="SemiBold" />
+
+                            <TextBlock Grid.Column="0" Grid.Row="1" Text="23 °C" Foreground="White" FontSize="32" FontWeight="SemiBold"  />
+                            <TextBlock Grid.Column="1" Grid.Row="1" Text="33 %" Foreground="White" FontSize="32" FontWeight="SemiBold" />
+                        </Grid>
+                    </StackPanel>
+                    
+                </Grid>
+            </Grid>
+            
+        </Border>        
+    </Border>
+</UserControl>

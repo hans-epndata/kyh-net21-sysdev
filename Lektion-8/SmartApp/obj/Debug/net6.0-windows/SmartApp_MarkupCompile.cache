@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-8\SmartApp\App.xaml
-71049535173
+92005486630
 5576714843
-91435470257
+10-1723369299
 194-200944676
-Components\MainMenuComponent.xaml;MainWindow.xaml;MVVM\Views\KitchenView.xaml;Resources\BordersDictionary.xaml;Resources\ButtonsDictionary.xaml;Resources\FontsDictionary.xaml;Resources\MainMenuDictionary.xaml;
+Components\MainMenuComponent.xaml;Components\TileComponent.xaml;MainWindow.xaml;MVVM\Views\KitchenView.xaml;Resources\BordersDictionary.xaml;Resources\ButtonsDictionary.xaml;Resources\FontsDictionary.xaml;Resources\MainMenuDictionary.xaml;Resources\TilesDictionary.xaml;
 
 False
 

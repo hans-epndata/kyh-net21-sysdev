@@ -23,7 +23,12 @@
                 <CheckBox Grid.Column="1" Style="{StaticResource tileToggleButton}"  HorizontalAlignment="Right" VerticalAlignment="Center" />
             </Grid>
 
-            <TextBlock Grid.Row="1" Text="&#xf8f4;" Style="{StaticResource tileIcon}"  />
+            <StackPanel Grid.Row="1">
+                <TextBlock Text="&#xf8f4;" Style="{StaticResource tileIcon}"  />
+                <TextBlock Text="IntelliFAN" Foreground="White" HorizontalAlignment="Center" Margin="0 8 0 0" />
+            </StackPanel>
+            
+            
 
         </Grid>
     </Border>

@@ -54,19 +54,7 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
 
-                    <components:TileComponent Grid.Row="0" Grid.Column="0" />
-                    <components:TileComponent Grid.Row="0" Grid.Column="1" />
-                    <components:TileComponent Grid.Row="0" Grid.Column="2" />
-                    <components:TileComponent Grid.Row="1" Grid.Column="3" />
-                    <components:TileComponent Grid.Row="1" Grid.Column="0" />
-                    <components:TileComponent Grid.Row="1" Grid.Column="1" />
-                    <components:TileComponent Grid.Row="1" Grid.Column="2" />
-                    <components:TileComponent Grid.Row="0" Grid.Column="3" />
-                    <components:TileComponent Grid.Row="2" Grid.Column="0" />
-                    <components:TileComponent Grid.Row="2" Grid.Column="1" />
-                    <components:TileComponent Grid.Row="2" Grid.Column="2" />
-                    <components:TileComponent Grid.Row="2" Grid.Column="3" />
-
+                    <components:TileComponent Title="Intelli-Light" IconActive="&#xf672;" IconInActive="&#xf0eb;" Grid.Row="0" Grid.Column="0" />
                 </Grid>
             </Grid>
         </Border>        

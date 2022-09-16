@@ -19,8 +19,8 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Grid.Column="0" Text="Off" Foreground="White" Margin="0 0 50 0" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                <CheckBox Grid.Column="1" Style="{StaticResource tileToggleButton}"  HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="0" Style="{StaticResource tileToggleText}"  />
+                <CheckBox x:Name="toggle" Grid.Column="1" Style="{StaticResource tileToggleButton}"  HorizontalAlignment="Right" VerticalAlignment="Center" />
             </Grid>
 
             <StackPanel Grid.Row="1">

@@ -87,5 +87,21 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+    <Style x:Key="tileToggleText" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Margin" Value="0 0 50 0" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding ElementName=toggle,Path=IsChecked}" Value="True">
+                <Setter Property="Text" Value="On" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding ElementName=toggle,Path=IsChecked}" Value="False">
+                <Setter Property="Text" Value="Off" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    
     
 </ResourceDictionary>

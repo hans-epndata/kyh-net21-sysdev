@@ -70,7 +70,7 @@
 
     <Style x:Key="tilePanelIcon" TargetType="TextBlock">
         <Setter Property="FontFamily" Value="{StaticResource FontAwesome-Regular}" />
-        <Setter Property="FontSize" Value="72" />
+        <Setter Property="FontSize" Value="62" />
         <Setter Property="Margin" Value="0 0 0 10" />
         <Setter Property="Foreground" Value="White" />
         <Setter Property="VerticalAlignment" Value="Center" />

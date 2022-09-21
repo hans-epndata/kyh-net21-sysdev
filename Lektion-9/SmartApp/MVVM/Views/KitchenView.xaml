@@ -5,13 +5,38 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SmartApp.MVVM.Views" xmlns:components="clr-namespace:SmartApp.Components"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="720" d:DesignWidth="1280">
 
     
     <Border CornerRadius="12">
         <Border.Background>
             <ImageBrush Opacity="0.75" ImageSource="/Assets/Images/kitchen.jpeg" />
         </Border.Background>
-        <components:TileComponent DeviceName="Intelli-LIGHT" DeviceType="LIGHT" IconActive="&#xf672;" IconInActive="&#xf0eb;" StateActive="Active" StateInActive="Inactive" />
+
+        <Grid Margin="20">
+            <ItemsControl x:Name="deviceTileListView" ItemsSource="{Binding Devices}">
+                
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <components:TileComponent 
+                            DeviceName="{Binding DeviceName}" 
+                            DeviceType="{Binding DeviceType}"
+                            IconActive="{Binding IconActive}"
+                            IconInActive="{Binding IconInActive}"
+                            StateActive="{Binding StateActive}"
+                            StateInActive="{Binding StateInActive}"
+                            />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                
+            </ItemsControl>
+        </Grid>
+        
     </Border>
 </UserControl>

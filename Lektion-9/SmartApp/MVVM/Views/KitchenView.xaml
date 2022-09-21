@@ -14,7 +14,7 @@
         </Border.Background>
 
         <Grid Margin="20">
-            <ItemsControl x:Name="deviceTileListView" ItemsSource="{Binding Devices}">
+            <ItemsControl x:Name="deviceTileListView" >
                 
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>

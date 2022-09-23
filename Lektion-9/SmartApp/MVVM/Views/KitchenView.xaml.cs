@@ -29,10 +29,6 @@ namespace SmartApp.MVVM.Views
         {
             InitializeComponent();
 
-            var result = GetDevices().ConfigureAwait(false);
-            var devices = result.GetAwaiter().GetResult();
-            if (devices.Count > 0)
-                deviceTileListView.ItemsSource = devices;
         }
 
         private async Task<List<DeviceItem>> GetDevices()

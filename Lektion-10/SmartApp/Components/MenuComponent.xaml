@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="SmartApp.Components.MenuComponent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SmartApp.Components"
+             mc:Ignorable="d" 
+             >
+    
+    <Border Style="{StaticResource menuBar}">
+        <StackPanel Orientation="Horizontal">
+            <RadioButton Command="{Binding KitchenViewCommand}" Style="{StaticResource menuButton}" Content="&#xe01d;" IsChecked="True" />
+            <RadioButton Command="{Binding BedroomViewCommand}" Style="{StaticResource menuButton}" Content="&#xf8f7;" />
+            <RadioButton Command="{Binding LivingroomViewCommand}" Style="{StaticResource menuButton}" Content="&#xf79a;" />
+            <RadioButton x:Name="btnClose" Click="btnClose_Click" Style="{StaticResource menuButton}" Content="&#xf011;"  />
+        </StackPanel>
+    </Border>
+</UserControl>

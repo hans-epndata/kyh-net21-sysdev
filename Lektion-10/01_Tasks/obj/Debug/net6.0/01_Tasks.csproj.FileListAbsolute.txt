@@ -1,0 +1,15 @@
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\bin\Debug\net6.0\01_Tasks.exe
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\bin\Debug\net6.0\01_Tasks.deps.json
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\bin\Debug\net6.0\01_Tasks.runtimeconfig.json
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\bin\Debug\net6.0\01_Tasks.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\bin\Debug\net6.0\01_Tasks.pdb
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\obj\Debug\net6.0\01_Tasks.csproj.AssemblyReference.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\obj\Debug\net6.0\01_Tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\obj\Debug\net6.0\01_Tasks.AssemblyInfoInputs.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\obj\Debug\net6.0\01_Tasks.AssemblyInfo.cs
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\obj\Debug\net6.0\01_Tasks.csproj.CoreCompileInputs.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\obj\Debug\net6.0\01_Tasks.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\obj\Debug\net6.0\refint\01_Tasks.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\obj\Debug\net6.0\01_Tasks.pdb
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\obj\Debug\net6.0\01_Tasks.genruntimeconfig.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Tasks\obj\Debug\net6.0\ref\01_Tasks.dll

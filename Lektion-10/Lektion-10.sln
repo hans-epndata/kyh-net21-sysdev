@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartApp", "SmartApp\SmartApp.csproj", "{7F9E0A2A-D4C3-409D-AF8F-EA72F22B5FD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Threads", "01_Threads\01_Threads.csproj", "{ADD08438-71C9-4B3F-81D2-C75DF6E13235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Tasks", "01_Tasks\01_Tasks.csproj", "{45032E40-FD8F-4BCF-B7C3-9056F9DEAD77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F9E0A2A-D4C3-409D-AF8F-EA72F22B5FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F9E0A2A-D4C3-409D-AF8F-EA72F22B5FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F9E0A2A-D4C3-409D-AF8F-EA72F22B5FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F9E0A2A-D4C3-409D-AF8F-EA72F22B5FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD08438-71C9-4B3F-81D2-C75DF6E13235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD08438-71C9-4B3F-81D2-C75DF6E13235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD08438-71C9-4B3F-81D2-C75DF6E13235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD08438-71C9-4B3F-81D2-C75DF6E13235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45032E40-FD8F-4BCF-B7C3-9056F9DEAD77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45032E40-FD8F-4BCF-B7C3-9056F9DEAD77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45032E40-FD8F-4BCF-B7C3-9056F9DEAD77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45032E40-FD8F-4BCF-B7C3-9056F9DEAD77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E7D4F86-44E5-42B3-A60C-20E55DF98718}
+	EndGlobalSection
+EndGlobal

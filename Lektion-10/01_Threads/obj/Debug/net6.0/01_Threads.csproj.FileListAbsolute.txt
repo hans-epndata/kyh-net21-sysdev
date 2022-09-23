@@ -1,0 +1,15 @@
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\bin\Debug\net6.0\01_Threads.exe
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\bin\Debug\net6.0\01_Threads.deps.json
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\bin\Debug\net6.0\01_Threads.runtimeconfig.json
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\bin\Debug\net6.0\01_Threads.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\bin\Debug\net6.0\01_Threads.pdb
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\obj\Debug\net6.0\01_Threads.csproj.AssemblyReference.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\obj\Debug\net6.0\01_Threads.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\obj\Debug\net6.0\01_Threads.AssemblyInfoInputs.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\obj\Debug\net6.0\01_Threads.AssemblyInfo.cs
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\obj\Debug\net6.0\01_Threads.csproj.CoreCompileInputs.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\obj\Debug\net6.0\01_Threads.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\obj\Debug\net6.0\refint\01_Threads.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\obj\Debug\net6.0\01_Threads.pdb
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\obj\Debug\net6.0\01_Threads.genruntimeconfig.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-10\01_Threads\obj\Debug\net6.0\ref\01_Threads.dll

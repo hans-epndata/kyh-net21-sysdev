@@ -16,10 +16,12 @@ namespace SmartApp.MVVM.ViewModels
     {
         private DispatcherTimer timer;
         private ObservableCollection<DeviceItem> _deviceItems;
+        private List<DeviceItem> _tempList;
         private readonly RegistryManager registryManager = RegistryManager.CreateFromConnectionString("HostName=kyh-shared-iothub.azure-devices.net;SharedAccessKeyName=smartapp;SharedAccessKey=R/N6ZzliBw7DCnNxc1RihORopUA2A0gq5ssFlGT+jO4=");
 
         public KitchenViewModel()
         {
+            _tempList = new List<DeviceItem>();
             _deviceItems = new ObservableCollection<DeviceItem>();
             PopulateDeviceItemsAsync().ConfigureAwait(false);
             SetInterval(TimeSpan.FromSeconds(3));
@@ -53,16 +55,24 @@ namespace SmartApp.MVVM.ViewModels
 
         private async Task UpdateDeviceItemsAsync()
         {
+            _tempList.Clear();
+
             foreach (var item in _deviceItems)
             {
                 var device = await registryManager.GetDeviceAsync(item.DeviceId);
                 if (device == null)
-                    _deviceItems.Remove(item);
+                    _tempList.Add(item);
+            }
+
+            foreach(var item in _tempList)
+            {
+                _deviceItems.Remove(item);
             }
         }
 
         private async Task PopulateDeviceItemsAsync()
         {
+            //var result = registryManager.CreateQuery("select * from devices where location = 'kitchen'");
             var result = registryManager.CreateQuery("select * from devices");
 
             if (result.HasMoreResults)

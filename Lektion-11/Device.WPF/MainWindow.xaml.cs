@@ -22,6 +22,7 @@ using Microsoft.VisualBasic;
 using Newtonsoft.Json.Linq;
 using Microsoft.Azure.Devices.Shared;
 using Newtonsoft.Json;
+using Device.WPF.Models;
 
 namespace Device.WPF
 {
@@ -33,12 +34,9 @@ namespace Device.WPF
         private readonly string _connect_url = "http://localhost:7138/api/devices/connect";
         private readonly string _connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\Lektion-11\\Device.WPF\\Data\\device_db.mdf;Integrated Security=True;Connect Timeout=30";
         private DeviceClient _deviceClient;
+        private DeviceInfo deviceInfo;
 
-        private string _deviceId = "";
-        private string _deviceName = "WPF Device";
-        private string _deviceType = "light";
-        private string _owner = "Hans Mattin-Lassei";
-        
+        private string _deviceId = "";        
         private bool _lightState = false;
         private bool _lightPrevState = false;
         private bool _connected = false;
@@ -64,7 +62,7 @@ namespace Device.WPF
             {
                 tbStateMessage.Text = "Generating new DeviceID";
                 _deviceId = Guid.NewGuid().ToString();
-                await conn.ExecuteAsync("INSERT INTO DeviceInfo (DeviceId) VALUES (@DeviceId)", new { DeviceId = _deviceId });
+                await conn.ExecuteAsync("INSERT INTO DeviceInfo (DeviceId,DeviceName,DeviceType,Location,Owner) VALUES (@DeviceId, @DeviceName, @DeviceType, @Location, @Owner)", new { DeviceId = _deviceId, DeviceName = "WPF Device", DeviceType = "light", Location = "kitchen", Owner = "Hans Mattin-Lassei" });
             }      
 
             var device_ConnectionString = await conn.QueryFirstOrDefaultAsync<string>("SELECT ConnectionString FROM DeviceInfo WHERE DeviceId = @DeviceId", new { DeviceId = _deviceId });
@@ -72,7 +70,7 @@ namespace Device.WPF
             {
                 tbStateMessage.Text = "Initializing ConnectionString. Please wait...";
                 using var http = new HttpClient();
-                var result = await http.PostAsJsonAsync(_connect_url, new { _deviceId });
+                var result = await http.PostAsJsonAsync(_connect_url, new { deviceId = _deviceId });
                 device_ConnectionString = await result.Content.ReadAsStringAsync();
                 await conn.ExecuteAsync("UPDATE DeviceInfo SET ConnectionString = @ConnectionString WHERE DeviceId = @DeviceId", new { DeviceId = _deviceId, ConnectionString = device_ConnectionString });
             }
@@ -80,10 +78,14 @@ namespace Device.WPF
             _deviceClient = DeviceClient.CreateFromConnectionString(device_ConnectionString);
 
             tbStateMessage.Text = "Updating Twin Properties. Please wait...";
+
+            deviceInfo = await conn.QueryFirstOrDefaultAsync<DeviceInfo>("SELECT * FROM DeviceInfo WHERE DeviceId = @DeviceId", new { DeviceId = _deviceId });
+            
             var twinCollection = new TwinCollection();
-            twinCollection["deviceName"] = _deviceName;
-            twinCollection["deviceType"] = _deviceType;
-            twinCollection["owner"] = _owner;
+            twinCollection["deviceName"] = deviceInfo.DeviceName;
+            twinCollection["deviceType"] = deviceInfo.DeviceType;
+            twinCollection["location"] = deviceInfo.Location;
+            twinCollection["owner"] = deviceInfo.Owner;
             twinCollection["lightState"] = _lightState;
 
             await _deviceClient.UpdateReportedPropertiesAsync(twinCollection);
@@ -105,9 +107,10 @@ namespace Device.WPF
                         // d2c
                         var json = JsonConvert.SerializeObject(new { lightState = _lightState });
                         var message = new Message(Encoding.UTF8.GetBytes(json));
-                            message.Properties.Add("deviceName", _deviceName);
-                            message.Properties.Add("deviceType", _deviceType);
-                            message.Properties.Add("owner", _owner);
+                            message.Properties.Add("deviceName", deviceInfo.DeviceName);
+                            message.Properties.Add("deviceType", deviceInfo.DeviceType);
+                            message.Properties.Add("location", deviceInfo.Location);
+                            message.Properties.Add("owner", deviceInfo.Owner);
                        
                         await _deviceClient.SendEventAsync(message);
                         tbStateMessage.Text = $"Message sent at {DateTime.Now}.";
@@ -120,6 +123,16 @@ namespace Device.WPF
                 }
                 await Task.Delay(_interval);
             }
+        }
+
+        private void btnOnOff_Click(object sender, RoutedEventArgs e)
+        {
+            _lightState = !_lightState;
+
+            if (_lightState)
+                btnOnOff.Content = "Turn Off";
+            else
+                btnOnOff.Content = "Turn On";
         }
     }
 }

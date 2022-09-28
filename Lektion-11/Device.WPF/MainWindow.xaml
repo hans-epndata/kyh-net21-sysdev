@@ -6,8 +6,11 @@
         xmlns:local="clr-namespace:Device.WPF"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="IOT DEVICE" Height="100" Width="250">
+        Title="IOT DEVICE" Height="150" Width="250">
     <Grid>
-        <TextBlock x:Name="tbStateMessage" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="tbStateMessage" FontSize="12" HorizontalAlignment="Center" />
+            <Button x:Name="btnOnOff" Click="btnOnOff_Click" Content="Turn On" Padding="10 5" Margin="0 20 0 0" HorizontalAlignment="Center" />
+        </StackPanel>
     </Grid>
 </Window>

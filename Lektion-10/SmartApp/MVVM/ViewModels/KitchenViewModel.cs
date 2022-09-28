@@ -73,7 +73,7 @@ namespace SmartApp.MVVM.ViewModels
         private async Task PopulateDeviceItemsAsync()
         {
             //var result = registryManager.CreateQuery("select * from devices where location = 'kitchen'");
-            var result = registryManager.CreateQuery("select * from devices");
+            var result = registryManager.CreateQuery("select * from devices where properties.reported.location = 'kitchen'");
 
             if (result.HasMoreResults)
             {

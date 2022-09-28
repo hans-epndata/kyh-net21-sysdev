@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Device.WPF", "Device.WPF\Device.WPF.csproj", "{24B928FA-0A77-4C7A-9ED3-12FDC6AA5A02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Device.WPF", "Device.WPF\Device.WPF.csproj", "{24B928FA-0A77-4C7A-9ED3-12FDC6AA5A02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{5124DC83-7FE2-41CA-9DAC-046C9ED79035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{5124DC83-7FE2-41CA-9DAC-046C9ED79035}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

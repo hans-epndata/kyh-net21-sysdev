@@ -1,0 +1,20 @@
+﻿<Page x:Class="Device.WPF.TemperatureApp.SetupWizard.SetupWizard_YourInformation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Device.WPF.TemperatureApp.SetupWizard"
+      mc:Ignorable="d" 
+      Title="Setup Wizard - Your Information">
+
+    <StackPanel>
+        <TextBlock Text="E-mail Address" FontWeight="Bold" Margin="0 0 0 3" />
+        <TextBox x:Name="tb_Email" KeyUp="tb_Email_KeyUp" Padding="8" />
+
+        <TextBlock Text="First Name  (optional)" FontWeight="Bold" Margin="0 10 0 3" />
+        <TextBox x:Name="tb_FirstName" KeyUp="tb_FirstName_KeyUp"  Padding="8" />
+
+        <TextBlock Text="Last Name (optional)" FontWeight="Bold" Margin="0 10 0 3" />
+        <TextBox x:Name="tb_LastName" KeyUp="tb_LastName_KeyUp"  Padding="8" />
+    </StackPanel>
+</Page>

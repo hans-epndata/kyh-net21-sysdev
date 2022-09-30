@@ -1,0 +1,17 @@
+﻿<Page x:Class="Device.WPF.TemperatureApp.SetupWizard.SetupWizard_DeviceInformation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Device.WPF.TemperatureApp.SetupWizard"
+      mc:Ignorable="d" 
+      Title="Setup Wizard - Device Information">
+
+    <StackPanel>
+        <TextBlock Text="Device Name (optional)" FontWeight="Bold" Margin="0 0 0 3" />
+        <TextBox x:Name="tb_DeviceName" KeyUp="tb_DeviceName_KeyUp"  Padding="8" />
+
+        <TextBlock Text="Location (optional)" FontWeight="Bold" Margin="0 10 0 3" />
+        <TextBox x:Name="tb_Location" KeyUp="tb_Location_KeyUp"  Padding="8" />
+    </StackPanel>
+</Page>

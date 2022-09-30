@@ -39,7 +39,7 @@
             <StackPanel Grid.Column="1">
                 <Grid Margin="0 0 0 5">
                     <Ellipse x:Name="ellipse_DeviceInformation" Fill="LightGray" Height="25" Width="25" />
-                    <TextBlock Text="1" FontWeight="Bold" FontSize="11" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="2" FontWeight="Bold" FontSize="11" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </Grid>
                 <TextBlock x:Name="tblock_DeviceInformation" Text="Device Information" FontSize="11" HorizontalAlignment="Center" />
             </StackPanel>
@@ -47,14 +47,14 @@
             <StackPanel Grid.Column="2">
                 <Grid Margin="0 0 0 5">
                     <Ellipse x:Name="ellipse_Finish" Fill="LightGray" Height="25" Width="25" />
-                    <TextBlock Text="1" FontWeight="Bold" FontSize="11" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="3" FontWeight="Bold" FontSize="11" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </Grid>
                 <TextBlock x:Name="tblock_Finish" Text="Connect/Finish" FontSize="11" HorizontalAlignment="Center" />
             </StackPanel>
         </Grid>
 
         <!-- THIRD ROW -->
-        <Frame Grid.Row="2" x:Name="CurrentPageView" NavigationUIVisibility="Hidden" />
+        <Frame Grid.Row="2" x:Name="CurrentPage" NavigationUIVisibility="Hidden" />
 
         <!-- FORTH ROW -->
         <Grid Grid.Row="3">

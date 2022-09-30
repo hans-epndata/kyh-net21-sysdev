@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Device.UWP.TemperatureApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Device.UWP.TemperatureApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock x:ConnectionId='2' x:Name="tblock_Status" Margin="0 40 0 40" HorizontalAlignment="Center" />
+            <Button x:ConnectionId='3' x:Name="btnDirectMethod"                               Content="CHANGE STATE" Padding="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBox x:ConnectionId='4' x:Name="tb_DeviceId" Margin="0 20 0 20" />
+            <Button x:ConnectionId='5' x:Name="btnRemove"                          Content="REMOVE DEVICE" Padding="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </StackPanel>
+        
+        
+    </Grid>
+</Page>
+

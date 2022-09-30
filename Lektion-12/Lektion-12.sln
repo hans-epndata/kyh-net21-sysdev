@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{6FDE1734-4893-496D-AE7B-5E055FFD036B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{6FDE1734-4893-496D-AE7B-5E055FFD036B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Device.UWP.TemperatureApp", "Device.UWP.TemperatureApp\Device.UWP.TemperatureApp.csproj", "{21225460-A3C4-4471-82FD-CED9FAEB5D14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Device.WPF.TemperatureApp", "Device.WPF.TemperatureApp\Device.WPF.TemperatureApp.csproj", "{2AC2D466-FD11-4B39-9AF3-C1D676C54D92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Device.WPF.TemperatureApp", "Device.WPF.TemperatureApp\Device.WPF.TemperatureApp.csproj", "{2AC2D466-FD11-4B39-9AF3-C1D676C54D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Device.Console.TemperatureApp", "Device.Console.TemperatureApp\Device.Console.TemperatureApp.csproj", "{17D43E84-5A3E-4345-A42F-5A89581D6CE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,26 @@ Global
 		{2AC2D466-FD11-4B39-9AF3-C1D676C54D92}.Release|x64.Build.0 = Release|Any CPU
 		{2AC2D466-FD11-4B39-9AF3-C1D676C54D92}.Release|x86.ActiveCfg = Release|Any CPU
 		{2AC2D466-FD11-4B39-9AF3-C1D676C54D92}.Release|x86.Build.0 = Release|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Debug|ARM.Build.0 = Debug|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Debug|x64.Build.0 = Debug|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Debug|x86.Build.0 = Debug|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Release|ARM.Build.0 = Release|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Release|ARM64.Build.0 = Release|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Release|x64.ActiveCfg = Release|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Release|x64.Build.0 = Release|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Release|x86.ActiveCfg = Release|Any CPU
+		{17D43E84-5A3E-4345-A42F-5A89581D6CE2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

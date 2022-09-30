@@ -69,8 +69,8 @@ namespace Device.WPF.TemperatureApp.SetupWizard {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Device.WPF.TemperatureApp;component/setupwizard/setupwizard_deviceinformation.xa" +
-                    "ml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Device.WPF.TemperatureApp;V1.0.0.0;component/setupwizard/setupwizard_deviceinfor" +
+                    "mation.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\SetupWizard\SetupWizard_DeviceInformation.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

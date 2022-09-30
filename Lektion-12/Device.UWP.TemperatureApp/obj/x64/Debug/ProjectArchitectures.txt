@@ -1,0 +1,1 @@
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-12\Device.UWP.TemperatureApp\Device.UWP.TemperatureApp.csproj;x64

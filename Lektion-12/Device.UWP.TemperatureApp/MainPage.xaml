@@ -9,7 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel>
+            <TextBlock x:Name="tblock_Status" Margin="0 40 0 40" HorizontalAlignment="Center" />
+            <Button x:Name="btnDirectMethod" Click="btnDirectMethod_Click" Content="CHANGE STATE" Padding="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBox x:Name="tb_DeviceId" Margin="0 20 0 20" />
+            <Button x:Name="btnRemove" Click="btnRemove_Click"  Content="REMOVE DEVICE" Padding="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </StackPanel>
         
-
+        
     </Grid>
 </Page>

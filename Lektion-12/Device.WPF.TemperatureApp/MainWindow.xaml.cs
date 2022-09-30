@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Device.WPF.TemperatureApp.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,19 @@ namespace Device.WPF.TemperatureApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly ConfigurationService _configurationService;
+
         public MainWindow()
         {
             InitializeComponent();
+            _configurationService = new ConfigurationService();
+
+            if (!Task.Run(() => _configurationService.IsConfiguredAsync()).Result)
+            {
+                this.Hide();
+                SetupWizard.SetupWizard setupWizard = new SetupWizard.SetupWizard();
+                setupWizard.Show();
+            }
         }
     }
 }

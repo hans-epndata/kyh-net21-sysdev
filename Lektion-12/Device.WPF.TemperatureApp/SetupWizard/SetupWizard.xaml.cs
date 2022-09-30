@@ -1,4 +1,5 @@
 ﻿using Device.WPF.TemperatureApp.Models;
+using Device.WPF.TemperatureApp.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,7 @@ namespace Device.WPF.TemperatureApp.SetupWizard
 
     public partial class SetupWizard : Window
     {
+        private readonly ConfigurationService configurationService;
         private SetupWizardSteps currentStep;
         public YourInformation yourInformation;
         public DeviceInformation deviceInformation;
@@ -34,6 +36,7 @@ namespace Device.WPF.TemperatureApp.SetupWizard
         public SetupWizard()
         {
             InitializeComponent();
+            configurationService = new ConfigurationService();
             yourInformation = new YourInformation();
             deviceInformation = new DeviceInformation();
             connectionInformation = new ConnectionInformation();
@@ -73,7 +76,7 @@ namespace Device.WPF.TemperatureApp.SetupWizard
             }
         }
 
-        private void btn_Next_Click(object sender, RoutedEventArgs e)
+        private async void btn_Next_Click(object sender, RoutedEventArgs e)
         {
             switch(currentStep)
             {
@@ -108,7 +111,23 @@ namespace Device.WPF.TemperatureApp.SetupWizard
                     break;
 
                 case SetupWizardSteps.Finished:
+                    await ConfigureDeviceAsync();
                     break;
+            }
+        }
+
+        private async Task ConfigureDeviceAsync()
+        {
+            deviceInformation = await configurationService.ConnectDeviceAsync($"{connectionInformation.ConnectionEndpoint}?deviceId={deviceInformation.DeviceId}", deviceInformation);
+            if (!string.IsNullOrEmpty(deviceInformation.ConnectionString))
+            {
+                deviceInformation.IsConfigured = true;
+                await configurationService.SaveYourInformationAsync(yourInformation);
+                await configurationService.SaveDeviceInformationAsync(deviceInformation);
+
+                this.Hide();
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
             }
         }
     }

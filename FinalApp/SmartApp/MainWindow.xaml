@@ -4,9 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmartApp"
+        xmlns:viewModels="clr-namespace:SmartApp.MVVM.ViewModels"
+        xmlns:views="clr-namespace:SmartApp.MVVM.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="MainWindow" 
+        WindowStartupLocation="CenterScreen"
+        Height="720" 
+        Width="1280">
+    
+    <Border Background="#3f3f40">
+        <ContentControl Content="{Binding CurrentViewModel}">
+            <ContentControl.Resources>
+                <DataTemplate DataType="{x:Type viewModels:KitchenViewModel}">
+                    <views:KitchenView />
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type viewModels:BedroomViewModel}">
+                    <views:BedroomView />
+                </DataTemplate>
+            </ContentControl.Resources>
+        </ContentControl>
+    </Border>
 </Window>

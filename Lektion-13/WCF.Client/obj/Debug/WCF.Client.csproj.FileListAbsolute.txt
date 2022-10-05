@@ -1,0 +1,8 @@
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-13\WCF.Client\bin\Debug\WCF.Client.exe.config
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-13\WCF.Client\bin\Debug\WCF.Client.exe
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-13\WCF.Client\bin\Debug\WCF.Client.pdb
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-13\WCF.Client\obj\Debug\WCF.Client.csproj.AssemblyReference.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-13\WCF.Client\obj\Debug\WCF.Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-13\WCF.Client\obj\Debug\WCF.Client.csproj.CoreCompileInputs.cache
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-13\WCF.Client\obj\Debug\WCF.Client.exe
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\Lektion-13\WCF.Client\obj\Debug\WCF.Client.pdb

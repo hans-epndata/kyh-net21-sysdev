@@ -7,16 +7,22 @@ using Device.ConsoleApp.Models;
 
 DeviceClient deviceClient;
 DeviceSettings deviceSettings = new DeviceSettings();
-
 var connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\HansMattin-Lassei\\Desktop\\device_consoleapp_db.mdf;Integrated Security=True;Connect Timeout=30";
-using var conn = new SqlConnection(connectionString);
 
-deviceSettings = await conn.QueryFirstOrDefaultAsync<DeviceSettings>("SELECT * FROM Settings");
+using var conn = new SqlConnection(connectionString);
+try
+{
+    var settings = await conn.QueryFirstOrDefaultAsync<DeviceSettings>("SELECT * FROM Settings");
+    if (settings != null)
+        deviceSettings = settings; 
+}
+catch { }
+
 
 if (string.IsNullOrEmpty(deviceSettings.DeviceId))
 {
     deviceSettings.DeviceId = Guid.NewGuid().ToString();
-    
+   
     Console.Write("Enter Device Name: ");
     deviceSettings.DeviceName = Console.ReadLine();
     Console.Write("Enter Device Type: ");
@@ -43,6 +49,14 @@ var twinCollection = new TwinCollection();
 twinCollection["deviceName"] = deviceSettings.DeviceName;
 twinCollection["deviceType"] = deviceSettings.DeviceType;
 twinCollection["location"] = deviceSettings.Location;
-
 await deviceClient.UpdateReportedPropertiesAsync(twinCollection);
 
+await deviceClient.SetMethodHandlerAsync("StartStop", StartStopAsync, null);
+
+Task<MethodResponse> StartStopAsync(MethodRequest methodRequest, object userContext)
+{
+    Console.WriteLine($"Method {methodRequest.Name} has been triggred.");
+    return Task.FromResult(new MethodResponse(new byte[0], 200));
+}
+
+Console.ReadKey();

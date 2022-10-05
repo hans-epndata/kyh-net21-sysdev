@@ -56,3 +56,12 @@ C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\obj\Debu
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\KitchenView.g.cs
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\BedroomView.baml
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\KitchenView.baml
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Amqp.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Devices.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Devices.Shared.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Rest.ClientRuntime.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debug\net6.0-windows\System.Memory.Data.dll

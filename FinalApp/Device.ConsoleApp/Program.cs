@@ -3,52 +3,46 @@ using Dapper;
 using System.Net.Http.Json;
 using Microsoft.Azure.Devices.Client;
 using Microsoft.Azure.Devices.Shared;
+using Device.ConsoleApp.Models;
 
 DeviceClient deviceClient;
-var interval = 10000;
-var deviceId = "";
-var device_connectionString = "";
-var deviceName = "";
-var deviceType = "";
-var location = "";
+DeviceSettings deviceSettings = new DeviceSettings();
 
-var connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\FinalApp\\Device.ConsoleApp\\device_consoleapp_db.mdf;Integrated Security=True;Connect Timeout=30";
+var connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\HansMattin-Lassei\\Desktop\\device_consoleapp_db.mdf;Integrated Security=True;Connect Timeout=30";
 using var conn = new SqlConnection(connectionString);
 
-deviceId = await conn.QueryFirstOrDefaultAsync<string>("SELECT DeviceId FROM Settings");
-if (string.IsNullOrEmpty(deviceId))
-{
-    deviceId = Guid.NewGuid().ToString();
-    Console.Write("Enter Device Name: ");
-    deviceName = Console.ReadLine();
-    Console.Write("Enter Device Type: ");
-    deviceType = Console.ReadLine();
-    Console.Write("Enter Location: ");
-    location = Console.ReadLine();
+deviceSettings = await conn.QueryFirstOrDefaultAsync<DeviceSettings>("SELECT * FROM Settings");
 
-    await conn.ExecuteAsync("INSERT INTO Settings VALUES (@DeviceId, @ConnectionString, @DeviceName, @DeviceType, @Location)", new
-    {
-        DeviceId = deviceId,
-        ConnectionString = device_connectionString,
-        DeviceName = deviceName,
-        DeviceType = deviceType,
-        Location = location
-    });
+if (string.IsNullOrEmpty(deviceSettings.DeviceId))
+{
+    deviceSettings.DeviceId = Guid.NewGuid().ToString();
+    
+    Console.Write("Enter Device Name: ");
+    deviceSettings.DeviceName = Console.ReadLine();
+    Console.Write("Enter Device Type: ");
+    deviceSettings.DeviceType = Console.ReadLine();
+    Console.Write("Enter Location: ");
+    deviceSettings.Location = Console.ReadLine();
+
+    await conn.ExecuteAsync("INSERT INTO Settings VALUES (@DeviceId, @ConnectionString, @DeviceName, @DeviceType, @Location)", deviceSettings);
 }
 
-using var client = new HttpClient();
-var result = await client.PostAsJsonAsync("http://localhost:7118/api/devices/connect", new { deviceId });
-device_connectionString = await result.Content.ReadAsStringAsync();
+if (string.IsNullOrEmpty(deviceSettings.ConnectionString))
+{
+    using var client = new HttpClient();
+    var result = await client.PostAsJsonAsync("http://localhost:7118/api/devices/connect", deviceSettings);
+    deviceSettings.ConnectionString = await result.Content.ReadAsStringAsync();
+    await conn.ExecuteAsync("UPDATE Settings SET ConnectionString = @ConnectionString WHERE DeviceId = @DeviceId", deviceSettings);
+}
 
-deviceClient = DeviceClient.CreateFromConnectionString(device_connectionString, TransportType.Mqtt);
+deviceClient = DeviceClient.CreateFromConnectionString(deviceSettings.ConnectionString, TransportType.Mqtt);
 var twin = await deviceClient.GetTwinAsync();
-try { interval = (int)twin.Properties.Desired["interval"]; }
-catch { }
+try { deviceSettings.Interval = (int)twin.Properties.Desired["interval"]; } catch { }
 
 var twinCollection = new TwinCollection();
-twinCollection["deviceName"] = deviceName;
-twinCollection["deviceType"] = deviceType;
-twinCollection["location"] = location;
+twinCollection["deviceName"] = deviceSettings.DeviceName;
+twinCollection["deviceType"] = deviceSettings.DeviceType;
+twinCollection["location"] = deviceSettings.Location;
 
 await deviceClient.UpdateReportedPropertiesAsync(twinCollection);
 

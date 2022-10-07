@@ -65,3 +65,209 @@ C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debu
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Rest.ClientRuntime.dll
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Fonts\fa-regular-400.ttf
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Fonts\fa-solid-900.ttf
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Images\bedroom.jpeg
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Images\kitchen.jpeg
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Images\livingroom.jpeg
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.exe
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.deps.json
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.runtimeconfig.json
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.pdb
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Amqp.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Devices.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Devices.Shared.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Console.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Rest.ClientRuntime.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.csproj.AssemblyReference.cache
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\BedroomView.g.cs
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\KitchenView.g.cs
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp_Content.g.cs
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp_MarkupCompile.cache
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp_MarkupCompile.lref
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\BedroomView.baml
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\KitchenView.baml
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.g.resources
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.AssemblyInfoInputs.cache
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.AssemblyInfo.cs
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.csproj.CoreCompileInputs.cache
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.csproj.CopyComplete
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\refint\SmartApp.dll
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.pdb
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.genruntimeconfig.cache
+C:\Users\HansMattin-Lassei\Desktop\kyh-net21-sysdev-master\FinalApp\SmartApp\obj\Debug\net6.0-windows\ref\SmartApp.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Fonts\fa-regular-400.ttf
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Fonts\fa-solid-900.ttf
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Images\bedroom.jpeg
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Images\kitchen.jpeg
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Images\livingroom.jpeg
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.exe
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.deps.json
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.runtimeconfig.json
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.pdb
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Amqp.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Devices.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Devices.Shared.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Console.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Rest.ClientRuntime.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.csproj.AssemblyReference.cache
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\BedroomView.g.cs
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\KitchenView.g.cs
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp_Content.g.cs
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp_MarkupCompile.cache
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp_MarkupCompile.lref
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\BedroomView.baml
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\KitchenView.baml
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.g.resources
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.AssemblyInfoInputs.cache
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.AssemblyInfo.cs
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.csproj.CoreCompileInputs.cache
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.csproj.CopyComplete
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\refint\SmartApp.dll
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.pdb
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.genruntimeconfig.cache
+C:\Users\HansMattin-Lassei\OneDrive - EPN Sverige AB\Dokument\Utbildning\FinalApp\SmartApp\obj\Debug\net6.0-windows\ref\SmartApp.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Fonts\fa-regular-400.ttf
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Fonts\fa-solid-900.ttf
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Images\bedroom.jpeg
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Images\kitchen.jpeg
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Assets\Images\livingroom.jpeg
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.exe
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.deps.json
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.runtimeconfig.json
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\SmartApp.pdb
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Amqp.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Devices.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Azure.Devices.Shared.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Console.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Microsoft.Rest.ClientRuntime.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.csproj.AssemblyReference.cache
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\BedroomView.g.cs
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\KitchenView.g.cs
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp_Content.g.cs
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp_MarkupCompile.cache
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp_MarkupCompile.lref
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\BedroomView.baml
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Views\KitchenView.baml
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.g.resources
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.AssemblyInfoInputs.cache
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.AssemblyInfo.cs
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.csproj.CoreCompileInputs.cache
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.csproj.CopyComplete
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\refint\SmartApp.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.pdb
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\SmartApp.genruntimeconfig.cache
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\ref\SmartApp.dll
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\Resources\FontDictionary.baml
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\App.baml
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\Resources\DeviceTileDictionary.baml
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Components\DeviceTile.g.cs
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\MVVM\Components\DeviceTile.baml

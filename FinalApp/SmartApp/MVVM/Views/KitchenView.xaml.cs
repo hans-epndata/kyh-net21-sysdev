@@ -36,12 +36,12 @@ namespace SmartApp.MVVM.Views
                 var deviceItem = (DeviceItem)button!.DataContext;
                 using ServiceClient serviceClient = ServiceClient.CreateFromConnectionString("HostName=kyh-shared-iothub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=/5asl5agNK3raYZNyfkumb0vcsnT+OdUeoUOupOWLQo=");
 
-                var directMethod = new CloudToDeviceMethod("StartStop");
+                var directMethod = new CloudToDeviceMethod("OnOff");
                 //deviceMethod.SetPayloadJson(JsonConvert.SerializeObject(new { interval = 50000 }));
                 var result = await serviceClient.InvokeDeviceMethodAsync(deviceItem.DeviceId, directMethod);
             }
             catch { }
-            
+
         }
     }
 }

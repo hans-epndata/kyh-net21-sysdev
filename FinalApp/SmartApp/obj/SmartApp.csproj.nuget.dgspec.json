@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\FinalApp\\SmartApp\\SmartApp.csproj": {}
+    "C:\\Users\\HansMattin-Lassei\\Desktop\\FinalApp\\SmartApp\\SmartApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\FinalApp\\SmartApp\\SmartApp.csproj": {
+    "C:\\Users\\HansMattin-Lassei\\Desktop\\FinalApp\\SmartApp\\SmartApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\FinalApp\\SmartApp\\SmartApp.csproj",
+        "projectUniqueName": "C:\\Users\\HansMattin-Lassei\\Desktop\\FinalApp\\SmartApp\\SmartApp.csproj",
         "projectName": "SmartApp",
-        "projectPath": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\FinalApp\\SmartApp\\SmartApp.csproj",
+        "projectPath": "C:\\Users\\HansMattin-Lassei\\Desktop\\FinalApp\\SmartApp\\SmartApp.csproj",
         "packagesPath": "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\FinalApp\\SmartApp\\obj\\",
+        "outputPath": "C:\\Users\\HansMattin-Lassei\\Desktop\\FinalApp\\SmartApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

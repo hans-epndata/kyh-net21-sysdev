@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartApp", "SmartApp\SmartApp.csproj", "{012C3D55-1C7F-4C6E-905B-33E73D326A92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartApp", "SmartApp\SmartApp.csproj", "{012C3D55-1C7F-4C6E-905B-33E73D326A92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{006BB2AB-2CF3-4E71-A27B-76EDEBB617F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{006BB2AB-2CF3-4E71-A27B-76EDEBB617F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Device.ConsoleApp", "Device.ConsoleApp\Device.ConsoleApp.csproj", "{F019E2D9-6FC0-4F13-986D-E8B79F834E31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Device.ConsoleApp", "Device.ConsoleApp\Device.ConsoleApp.csproj", "{F019E2D9-6FC0-4F13-986D-E8B79F834E31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

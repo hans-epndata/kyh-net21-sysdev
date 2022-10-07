@@ -2,23 +2,50 @@
 using Microsoft.Azure.Devices.Shared;
 using SmartApp.Helpers;
 using SmartApp.MVVM.Models;
+using SmartApp.Services;
 using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Windows;
 using System.Windows.Input;
 using System.Windows.Threading;
+using System.Net.Http;
+using System.Net.Http.Json;
+using Newtonsoft.Json;
+using Microsoft.Azure.Amqp.Framing;
 
 namespace SmartApp.MVVM.ViewModels
 {
     internal class KitchenViewModel : BaseViewModel
     {
-        private ObservableCollection<DeviceItem> _deviceItems;
-        private RegistryManager _registryManager;
+        private readonly NavigationStore _navigationStore;
+        private readonly IDeviceService _deviceService;
+        private readonly IWeatherService _weatherService;
 
-        public ObservableCollection<DeviceItem> DeviceItems
+        public ICommand NavigateToSettings { get; }
+
+        public KitchenViewModel(NavigationStore navigationStore, IDeviceService deviceService, IWeatherService weatherService)
+        {
+            _navigationStore = navigationStore;
+            _deviceService = deviceService;
+            _weatherService = weatherService;
+
+            DeviceItems = new ObservableCollection<DeviceItem>();
+            NavigateToSettings = new NavigateCommand<KitchenViewModel>(navigationStore, () => new KitchenViewModel(_navigationStore, _deviceService, _weatherService));
+
+            SetClock();
+            SetWeatherAsync().ConfigureAwait(false);
+            PopulateDeviceItemsAsync().ConfigureAwait(false);
+        }
+
+
+        private ObservableCollection<DeviceItem>? _deviceItems;
+        public ObservableCollection<DeviceItem>? DeviceItems
         {
             get => _deviceItems;
             set 
@@ -28,11 +55,16 @@ namespace SmartApp.MVVM.ViewModels
             }
         }
 
-
-        private readonly NavigationStore _navigationStore;
-        public ICommand NavigateToSettings { get; }
-        
-        public string PageTitle => "Köket";
+        private string? _currentWeatherCondition;
+        public string CurrentWeatherCondition
+        {
+            get => _currentWeatherCondition!;
+            set
+            {
+                _currentWeatherCondition = value;
+                OnPropertyChanged();
+            }
+        }
 
         private string? _currentTemperature;
         public string CurrentTemperature
@@ -57,8 +89,6 @@ namespace SmartApp.MVVM.ViewModels
 		}
 
         private string? _currentDate;
-
-
         public string CurrentDate
         {
             get => _currentDate!;
@@ -69,40 +99,53 @@ namespace SmartApp.MVVM.ViewModels
             }
         }
 
-
-
-        public KitchenViewModel(NavigationStore navigationStore)
+        protected override async void second_timer_tick(object? sender, EventArgs e)
         {
-            _navigationStore = navigationStore;
-            DeviceItems = new ObservableCollection<DeviceItem>();
-            _registryManager = RegistryManager.CreateFromConnectionString("HostName=kyh-shared-iothub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=/5asl5agNK3raYZNyfkumb0vcsnT+OdUeoUOupOWLQo=");
-
-            DispatcherTimer UpdateDateTime = new DispatcherTimer();
-            UpdateDateTime.Interval = TimeSpan.FromSeconds(5);
-            UpdateDateTime.Tick += timer_tick;
-            UpdateDateTime.Start();
+            SetClock();
+            await PopulateDeviceItemsAsync();
+            base.second_timer_tick(sender, e);
         }
 
-        private async void timer_tick(object? sender, EventArgs e)
+        protected override async void hour_timer_tick(object? sender, EventArgs e)
         {
-            CurrentTime = DateTime.Now.ToString("HH:mm:ss");
+            await SetWeatherAsync();
+            base.hour_timer_tick(sender, e);
+        }
+
+
+        private void SetClock()
+        {
+            CurrentTime = DateTime.Now.ToString("HH:mm");
             CurrentDate = DateTime.Now.ToString("dd MMMM yyyy");
-            await PopulateDevicesAsync();
         }
 
-        private async Task PopulateDevicesAsync()
+        private async Task SetWeatherAsync()
         {
-            var result = _registryManager.CreateQuery("select * from devices");
-            if (result.HasMoreResults)
+            var weather = await _weatherService.GetWeatherDataAsync();
+            CurrentTemperature = weather.Temperature.ToString();
+            CurrentWeatherCondition = weather.WeatherCondition ?? "";
+        }
+
+
+
+
+
+
+        private async Task PopulateDeviceItemsAsync()
+        {
+            var result = await _deviceService.GetDevicesAsync("select * from devices");
+
+            result.ForEach(device =>
             {
-                foreach (Twin twin in await result.GetNextAsTwinAsync())
+                var item = DeviceItems?.FirstOrDefault(x => x.DeviceId == device.DeviceId);
+                if (item == null)
+                    DeviceItems?.Add(device);
+                else
                 {
-                    DeviceItems.Add(new DeviceItem
-                    {
-                        DeviceId = 
-                    })
+                    var index = _deviceItems!.IndexOf(item);
+                    _deviceItems[index] = device;
                 }
-            }
+            });
         }
     }
 }

@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="SmartApp.MVVM.Components.DeviceTile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SmartApp.MVVM.Components"
+             mc:Ignorable="d" 
+             x:Name="deviceTile">
+    
+    <Button Click="DeviceTile_Click" Style="{StaticResource device_tile}">
+        <Grid Style="{StaticResource device_tile_grid}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+
+            <CheckBox IsChecked="{Binding DeviceState}" Grid.Row="0"  Grid.Column="1" x:Name="deviceToggleSwitch" Style="{StaticResource device_tile_toggleSwitch }" />
+
+            <TextBlock Grid.Row="1"  Grid.ColumnSpan="2" Style="{StaticResource device_tile_deviceIcon}" />
+
+            <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="0 15 0 0">
+                <TextBlock  Style="{StaticResource device_tile_deviceName}"  />
+                <TextBlock  Style="{StaticResource device_tile_deviceType}"  />
+            </StackPanel>
+
+        </Grid>
+    </Button>
+</UserControl>

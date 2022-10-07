@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SmartApp.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SmartApp.MVVM.ViewModels
 {
-    internal class BaseViewModel : INotifyPropertyChanged
+    internal class BaseViewModel : Timers, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 

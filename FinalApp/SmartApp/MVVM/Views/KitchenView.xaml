@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SmartApp.MVVM.Views"
+             xmlns:local="clr-namespace:SmartApp.MVVM.Views" xmlns:components="clr-namespace:SmartApp.MVVM.Components"
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="1280">
     <Border>
         <Border.Background>
-            <ImageBrush Opacity="0.55" ImageSource="/Assets/Images/kitchen.jpeg" />
+            <ImageBrush Opacity="0.45" ImageSource="/Assets/Images/kitchen.jpeg" />
         </Border.Background>
 
         <Grid Margin="30">
@@ -17,34 +17,41 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Grid Grid.Row="0">
+            <Grid Grid.Row="0" Margin="0 0 0 50">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="2*" />
                     <ColumnDefinition Width="1*" />
                 </Grid.ColumnDefinitions>
 
-                <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
-                    <TextBlock Text="&#xE753;" FontFamily="Segoe MDL2 Assets" FontSize="62" Margin="0 0 15 0" Foreground="LightGray" />
+                <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <TextBlock Text="{Binding CurrentWeatherCondition}" FontFamily="{StaticResource FontAwesome-Regular}" FontSize="46" Margin="0 0 15 0" Foreground="LightGray" />
                     <TextBlock FontSize="22" Foreground="LightGray" HorizontalAlignment="Left" VerticalAlignment="Center">
                         <Run Text="{Binding CurrentTemperature}" FontSize="32" />
                         <Run Text="°C" />
                     </TextBlock>
                 </StackPanel>
 
-                <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <TextBlock Text="{Binding CurrentTime}" FontSize="42" Foreground="LightGray" HorizontalAlignment="Center"  />
-                    <TextBlock Text="{Binding CurrentDate}" FontSize="22" Foreground="LightGray" HorizontalAlignment="Center" />
+                <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 -15 0 0">
+                    <TextBlock Text="{Binding CurrentTime}" FontSize="52" Foreground="LightGray" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+                    <TextBlock Text="{Binding CurrentDate}" FontSize="20" Foreground="LightGray" HorizontalAlignment="Center" />
                 </StackPanel>
 
-                <Button Grid.Column="2" Content="&#xE713;" FontFamily="Segoe MDL2 Assets"  FontSize="32" Background="Transparent" Foreground="LightGray" BorderThickness="0" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <Button Grid.Column="2" Content="&#xE713;" FontFamily="Segoe MDL2 Assets"  FontSize="32" Background="Transparent" Foreground="LightGray" BorderThickness="0" HorizontalAlignment="Right" VerticalAlignment="Top" />
 
             </Grid>
 
             <ItemsControl x:Name="lv_Tiles" ItemsSource="{Binding DeviceItems}" Grid.Row="1" Background="Transparent" BorderThickness="0" HorizontalContentAlignment="Stretch">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Click="btn_DirectMethod_Click"  Background="#3f3f40" Height="210" Width="210" Padding="10" Margin="10">
+                        <components:DeviceTile 
+                            IsChecked="{Binding DeviceState}"
+                            DeviceName="{Binding DeviceName}" 
+                            DeviceType="{Binding DeviceType}"
+                            IconActive="{Binding IconActive}"
+                            IconInActive="{Binding IconInActive}"/>
+
+                        <!--<Button Click="btn_DirectMethod_Click" Command="{Binding SendDirectMethod}" CommandParameter="{Binding DeviceId}" Background="#3f3f40" Height="210" Width="210" Padding="10" Margin="10">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto" />
@@ -56,10 +63,14 @@
                                         <ColumnDefinition Width="auto" />
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
-
                                 </Grid>
+
+                                <StackPanel>
+                                    <TextBlock Text="{Binding DeviceId}" />
+                                    <TextBlock Text="{Binding DeviceName}" />
+                                </StackPanel>
                             </Grid>
-                        </Button>
+                        </Button>-->
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
                 <ItemsControl.ItemsPanel>

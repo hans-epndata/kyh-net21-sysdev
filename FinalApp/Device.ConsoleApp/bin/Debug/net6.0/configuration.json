@@ -1,0 +1,1 @@
+{"deviceId":"dc7f824d-5c8b-4373-a02c-b8414093a7ae","connectionString":"HostName=kyh-shared-iothub.azure-devices.net;DeviceId=dc7f824d-5c8b-4373-a02c-b8414093a7ae;SharedAccessKey=8bsSda/q2/wRuBbWvJIV2ciEGBhgSgMQVQahWsr69og=","deviceName":"ConsoleApp","deviceType":"light","location":"kitchen","interval":10000,"deviceState":false}

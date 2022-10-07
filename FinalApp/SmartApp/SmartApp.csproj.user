@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="MVVM\Components\DeviceTile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\Views\BedroomView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -18,10 +21,19 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MVVM\Components\DeviceTile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MVVM\Views\BedroomView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\Views\KitchenView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\DeviceTileDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\FontDictionary.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

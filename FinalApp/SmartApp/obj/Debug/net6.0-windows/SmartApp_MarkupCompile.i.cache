@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\obj\Debug\net6.0-windows\
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\obj\Debug\net6.0-windows\
 SmartApp
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\HansMattin-Lassei\Documents\Utbildning\NET21\FinalApp\SmartApp\App.xaml
-32142209506
+C:\Users\HansMattin-Lassei\Desktop\FinalApp\SmartApp\App.xaml
+6-1236037534
 5576714843
-14215892256
+22-419818185
 2271434512126
-MainWindow.xaml;MVVM\Views\BedroomView.xaml;MVVM\Views\KitchenView.xaml;
+MainWindow.xaml;MVVM\Components\DeviceTile.xaml;MVVM\Views\BedroomView.xaml;MVVM\Views\KitchenView.xaml;Resources\DeviceTileDictionary.xaml;Resources\FontDictionary.xaml;
 
 False
 

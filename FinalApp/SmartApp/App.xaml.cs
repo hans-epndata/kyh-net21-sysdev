@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Hosting;
 using SmartApp.Helpers;
 using SmartApp.MVVM.ViewModels;
+using SmartApp.Services;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -27,13 +28,17 @@ namespace SmartApp
             {
                 services.AddSingleton<MainWindow>();
                 services.AddSingleton<NavigationStore>();
+                services.AddScoped<IDeviceService, DeviceService>();
+                services.AddScoped<IWeatherService, WeatherService>();
             }).Build();
         }
 
         protected override async void OnStartup(StartupEventArgs e)
         {
             var navigationStore = app!.Services.GetRequiredService<NavigationStore>();
-            navigationStore.CurrentViewModel = new KitchenViewModel(navigationStore);
+            var deviceService = app!.Services.GetRequiredService<IDeviceService>();
+            var weatherService = app!.Services.GetRequiredService<IWeatherService>();
+            navigationStore.CurrentViewModel = new KitchenViewModel(navigationStore, deviceService, weatherService);
 
             await app!.StartAsync();
             var MainWindow = app.Services.GetRequiredService<MainWindow>();

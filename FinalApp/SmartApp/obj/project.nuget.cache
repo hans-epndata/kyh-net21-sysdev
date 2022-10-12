@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OiAX2VRFUPVzmiodRjCm+64adSFP2U25mMLKIPv4fDxDb68NV+4nWs6YvCoqvsBjTKAjVZBXAseji7m34f7GOA==",
+  "dgSpecHash": "uJWSTsfECyZi0uzhe/nFZ+8oVQEZYvE5wf7ko8pDXp8Z27f8LNzqH6F4vWYwv2gnxyAkxX3tfST5nagMwmpJuQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HansMattin-Lassei\\Desktop\\FinalApp\\SmartApp\\SmartApp.csproj",
+  "projectFilePath": "C:\\Users\\HansMattin-Lassei\\Documents\\Utbildning\\NET21\\FinalApp\\SmartApp\\SmartApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\azure.core\\1.22.0\\azure.core.1.22.0.nupkg.sha512",
     "C:\\Users\\HansMattin-Lassei\\.nuget\\packages\\microsoft.azure.amqp\\2.5.12\\microsoft.azure.amqp.2.5.12.nupkg.sha512",
